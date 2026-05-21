@@ -1,0 +1,32 @@
+{
+  "name": "removisions-code-finders-platform",
+  "version": "1.0.0",
+  "description": "No-code AI assistant website and smart app developers toolbox",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "install-agents": "npm install"
+  },
+  "keywords": [
+    "no-code",
+    "ai-assistant",
+    "chatgpt",
+    "gemini",
+    "claude",
+    "web-builder",
+    "app-builder"
+  ],
+  "author": "removisionscodefindersplatform-art",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "openai": "^4.52.0",
+    "@google/generative-ai": "^0.3.0",
+    "@anthropic-ai/sdk": "^0.13.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
