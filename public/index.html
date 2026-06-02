@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RemoVision's Code Finders Platform Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <strong>RemoVision's Code Finders Platform</strong>
+        <a href="#payments">Payments</a>
+        <a href="#builder">Builder</a>
+        <a href="#termux">Termux Command</a>
+      </nav>
+      <section class="hero-grid">
+        <div>
+          <p class="eyebrow">AI website, app, DNS, domain, and client build hub</p>
+          <h1>Command center for launching client projects with AI assistance and upper-tier payments.</h1>
+          <p class="lead">
+            Build websites and apps, coach clients through no-code workflows, track DNS/domain setup,
+            and prepare subscriptions through Stripe or PayPal from one dashboard.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#payments">Connect payments</a>
+            <a class="button ghost" href="#termux">Copy Termux prompt</a>
+          </div>
+        </div>
+        <aside class="status-card" aria-live="polite">
+          <span class="status-dot"></span>
+          <h2>Launch Readiness</h2>
+          <div id="readiness-list" class="readiness-list">Loading integration status…</div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section id="builder" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Builder workflow</p>
+          <h2>From login to launch, every project gets a guided track.</h2>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <span class="number">01</span>
+            <h3>Passwordless onboarding</h3>
+            <p>Prepare passkey, Google, Microsoft, or Okta-style sign-in experiences for users and clients.</p>
+          </article>
+          <article class="card">
+            <span class="number">02</span>
+            <h3>AI build assistants</h3>
+            <p>Surface OpenAI, Gemini, and Claude readiness so the platform knows which agent can help.</p>
+          </article>
+          <article class="card">
+            <span class="number">03</span>
+            <h3>DNS and domain board</h3>
+            <p>Track domain selection, DNS setup, verification, workspace email, and launch checklists.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="payments" class="section payment-section">
+        <div class="section-heading">
+          <p class="eyebrow">Upper-tier revenue</p>
+          <h2>Stripe and PayPal checkout hooks are ready for your live credentials.</h2>
+          <p>
+            Pick a tier below. If credentials are missing, the dashboard explains exactly which environment
+            variables to add. Once configured, checkout buttons return live provider links.
+          </p>
+        </div>
+        <div id="tier-grid" class="cards three"></div>
+        <div id="checkout-result" class="checkout-result" role="status"></div>
+      </section>
+
+      <section class="section integration-grid">
+        <article class="card dark">
+          <h2>Connected platform stack</h2>
+          <ul>
+            <li>YouTube training and webinar hub placeholder</li>
+            <li>Elfsight widget-maker launch slot</li>
+            <li>Google Workspace, Microsoft 365, and Okta checklist</li>
+            <li>Cloudflare DNS/security launch lane</li>
+          </ul>
+        </article>
+        <article id="termux" class="card command-card">
+          <h2>Command Codex inside Termux</h2>
+          <p>Run this from Termux after installing Node.js, Git, and Codex CLI:</p>
+          <pre><code>cd ~/RemoVisions-Code-Finders-Platform
+codex "Build RemoVision's dashboard, wire Stripe and PayPal checkout readiness, run npm test if present, commit the changes, and prepare a PR summary."</code></pre>
+          <p class="small">Never paste secret keys into Codex prompts. Put them in <code>.env</code>.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

@@ -164,6 +164,28 @@ chatWithClaude();
 4. Create a new key
 5. Copy and paste it in `.env` as `ANTHROPIC_API_KEY`
 
+## Dashboard and Payment Setup
+
+The dashboard is available after `npm run dev` at `http://localhost:3000`. It includes payment-ready upper-tier plan cards. Stripe and PayPal remain disabled until real credentials are added to `.env`.
+
+Required Stripe variables:
+
+```env
+STRIPE_SECRET_KEY=sk_test_or_live_key
+STRIPE_DEFAULT_PRICE_ID=price_default
+STRIPE_PRICE_PRO=price_upper_tier
+```
+
+Required PayPal variables:
+
+```env
+PAYPAL_ENVIRONMENT=sandbox
+PAYPAL_CLIENT_ID=your-client-id
+PAYPAL_CLIENT_SECRET=your-client-secret
+```
+
+Use sandbox credentials first, then switch to live provider credentials after testing.
+
 ## Available npm Scripts
 
 ```bash
@@ -180,7 +202,9 @@ RemoVisions-Code-Finders-Platform/
 ├── .gitignore           # Git ignore rules
 ├── package.json         # Project dependencies
 ├── SETUP.md            # This file
-└── index.js            # Main entry point (to be created)
+├── TERMUX.md           # Termux and Codex command guide
+├── public/             # Dashboard frontend assets
+└── index.js            # Main dashboard and payment API server
 ```
 
 ## Troubleshooting
