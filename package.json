@@ -2,11 +2,12 @@
   "name": "removisions-code-finders-platform",
   "version": "1.0.0",
   "description": "No-code AI assistant website and smart app developers toolbox",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --check server.js",
     "install-agents": "npm install"
   },
   "keywords": [
@@ -16,11 +17,16 @@
     "gemini",
     "claude",
     "web-builder",
-    "app-builder"
+    "app-builder",
+    "stripe",
+    "paypal"
   ],
   "author": "removisionscodefindersplatform-art",
   "license": "GPL-3.0",
   "dependencies": {
+    "express": "^4.18.2",
+    "stripe": "^14.0.0",
+    "@paypal/checkout-server-sdk": "^1.0.2",
     "openai": "^4.52.0",
     "@google/generative-ai": "^0.3.0",
     "@anthropic-ai/sdk": "^0.13.0",
